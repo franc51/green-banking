@@ -18,10 +18,12 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     align-items: center;
 }
 
-h1,h2,h3,p {
+h1,h2,h3,p,a {
     font-family: 'Ubuntu';
-    columns: black;
-    margin: 0
+    color: rgb(53, 52, 52);
+    margin: 0;
+    text-decoration: none;
+    
 }
 
 .brand {
@@ -90,35 +92,37 @@ align-items: center;
     box-shadow: 0px 3px 12px 2px rgb(158, 148, 148);
     display: flex;
     flex-direction: row;
-    
 }
-
-
 
 .accounts {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 }
 .RON_account {
     height: 28vh;
     width: 30vw;
     background-color: #21FA90;
     display: flex;
-    justify-content: space-around;
+   justify-content: space-between;
     flex-direction: column;
     box-shadow: 3px 12px 5px  rgb(206, 199, 199);
+    transition: 0.3s;
 }
 
+.RON_account:hover{
+    background-color: #C1E8F2;
+}
 .description {
-    padding-left: 20px;
-    padding-top: 30px;
+    padding-left: 15px;
+    padding-top:  15px;
+    
 }
 
 .balance {
     text-align: right;
-    padding-top: 40px;
-    padding-right: 40px;
+    padding-right: 25px;
     
 }
 
@@ -136,35 +140,89 @@ button {
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
-    
 }
 
 button:first-child {
     background-color: white;
 }
 button:first-child:hover {
-    background-color: #FFB600;
+    background-color: #ffe091;
     
 }
 
 button:hover {
     
-    background-color:#049ECF;
+    background-color:#0099ff
     
 }
-
-
-
 .advertisement {
     background-image: url('woman.jpg');
     background-repeat: no-repeat;
     background-size: contain;
-    height: 90vh;
-    width: 90vw;
     display: flex;
     flex-direction: column;
-    margin-left: 10px;
-    align-items: center;
-    padding: 58vh 2vh;
+    margin: 30px 30px;
+    justify-content: end;
+}
+
+
+
+
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 4vh 40vh;
     
+}
+
+.footer_links {
+    
+    text-align: center;
+    
+}
+
+.footer_title {
+    padding-bottom: 2vh ;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.poweredby {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#visa {
+    padding-right: 15px ;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4vh 40vh;
+}
+
+.horizontal_line_footer {
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hl{
+    height: 1px;
+    width: 57vw;
+    background-color: gray
 }
