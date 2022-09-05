@@ -1,6 +1,7 @@
 body {
     margin: 0;
-    background-color:white;
+    background-color: #fcfaff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%2396ff86' fill-opacity='0.2'%3E%3Cpath fill-rule='evenodd' d='M0 0h40v40H0V0zm40 40h40v40H40V40zm0-40h2l-2 2V0zm0 4l4-4h2l-6 6V4zm0 4l8-8h2L40 10V8zm0 4L52 0h2L40 14v-2zm0 4L56 0h2L40 18v-2zm0 4L60 0h2L40 22v-2zm0 4L64 0h2L40 26v-2zm0 4L68 0h2L40 30v-2zm0 4L72 0h2L40 34v-2zm0 4L76 0h2L40 38v-2zm0 4L80 0v2L42 40h-2zm4 0L80 4v2L46 40h-2zm4 0L80 8v2L50 40h-2zm4 0l28-28v2L54 40h-2zm4 0l24-24v2L58 40h-2zm4 0l20-20v2L62 40h-2zm4 0l16-16v2L66 40h-2zm4 0l12-12v2L70 40h-2zm4 0l8-8v2l-6 6h-2zm4 0l4-4v2l-2 2h-2z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 
@@ -17,9 +18,10 @@ body {
     align-items: center;
 }
 
-h2 {
+h1,h2,h3,p {
     font-family: 'Ubuntu';
     columns: black;
+    margin: 0
 }
 
 .brand {
@@ -80,10 +82,89 @@ align-items: center;
     justify-content: center;
     align-items: center;
 }
-.login_section {
-    margin-top: 8vh;
-    height: 80vh;
+.main_menu {
+    margin-top: 6vh;
+    height: 82vh;
     width: 80vw;
     background-color: white;
     box-shadow: 0px 3px 12px 2px rgb(158, 148, 148);
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+
+.accounts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.RON_account {
+    height: 28vh;
+    width: 30vw;
+    background-color: #21FA90;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    box-shadow: 3px 12px 5px  rgb(206, 199, 199);
+}
+
+.description {
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+.balance {
+    text-align: right;
+    padding-top: 40px;
+    padding-right: 40px;
+    
+}
+
+.payment_button {
+    text-align: right;
+    display: flex;
+    margin: 0;
+}
+
+button {
+    background-color: #ffffff;
+    border: none;
+    width: 100vw;
+    height: 7vh;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+
+button:first-child {
+    background-color: white;
+}
+button:first-child:hover {
+    background-color: #FFB600;
+    
+}
+
+button:hover {
+    
+    background-color:#049ECF;
+    
+}
+
+
+
+.advertisement {
+    background-image: url('woman.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 90vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    align-items: center;
+    padding: 58vh 2vh;
+    
 }
