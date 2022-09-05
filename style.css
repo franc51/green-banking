@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    background-color:white;
+}
+
+
+
+
+.navigation {
+    height: 9vh;
+    width: 100vw;
+    background-color: #21FA90;
+    position: relative;
+    box-shadow: 1px 5px 10px rgb(158, 148, 148);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2 {
+    font-family: 'Ubuntu';
+    columns: black;
+}
+
+.brand {
+display: flex;
+align-items: center;
+    
+}
+
+.brand_image {
+    height: 50px;
+    padding: 0 10px;
+}
+
+.translate_buttons{
+    height: 4vh ;
+    width: 10vw;
+    background-color: #69f1b0;
+    margin-right: 20px ;
+    border-radius: 4px;
+    border: 1px solid #2ac77b;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.en_flag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 2px 2px;
+}
+
+.ro_flag {
+    display: flex;
+    
+    align-items: center;
+}
+.v_l {
+    height: 16px;
+    width: 1px;
+    background-color: gray
+}
+
+.tr_btn{
+    padding-left: 5px;
+    text-decoration: none;
+    color: rgb(34, 34, 34);
+    font-family: 'Ubuntu';
+}
+
+
+
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login_section {
+    margin-top: 8vh;
+    height: 80vh;
+    width: 80vw;
+    background-color: white;
+    box-shadow: 0px 3px 12px 2px rgb(158, 148, 148);
+}
