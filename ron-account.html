@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="ron-account-style.css">
     <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
     <link rel="icon" href="GRB.PNG">
 
@@ -37,10 +37,9 @@
 
     <section>
         <div class="container">
-               <div class="main_menu">
-                 <div class="accounts">
-                     <div class="RON_account">
-
+            <div class="main_menu">
+                <div class="accounts">
+                    <div class="RON_account">
                         <div class="description"><h1>Account RON</h1><div class="dropdown_menu_accounts">
                             <img onclick="Account_dropdown_menu()" src="images/icons8-menu-vertical-30.png" class="account_dropdown_button">
                             <div id="yourDropdown" class="dropdown-content-account">
@@ -51,57 +50,43 @@
                           </div> </div>
                         <div class="balance"><h3>Balance:</h3><h1>611,42 Lei</h1></div>
                         <div class="payment_button">
-                        <button><img src="images/history.png"><a href="ron-account.html">Transaction History</a></button>
-                        <button><img src="images/credit-card.png"><a href="ron-account.html">New Payment</a></button>
-                    
+                        
                         </div>
-
-                     </div>
-                     <div class="RON_account">
-                        <div class="description"><h1>Account EUR</h1><div class="dropdown_menu_accounts">
-                            <img onclick="Account_dropdown_menu()" src="images/icons8-menu-vertical-30.png" class="account_dropdown_button">
-                            <div id="yourDropdown" class="dropdown-content-account">
-                              <div class="menu_links"><a href="#">Cards</a><img src="images/credit-card.png"></div>
-                              <div class="menu_links"><a href="#">Taxes</a><img src="images/device.png"></div>
-                              <div class="menu_links"><a href="#">IBAN</a><img src="images/notification.png"></div>
+                    </div>
+                    <div class="payment_transfer">
+                        <div><label>From account:</label></div>
+                        <div class="payment_info">
+                            <label type="text">RO61 RZBR 0000 0066 1955 4852</label>
+                        </div>
+                        <div><label>To account:</label></div>
+                        <div class="payment_info">
+                            <input class="casuta_noastra" type="text" placeholder="IBAN"></input>
+                        </div>
+                        <div><label>Name</label></div>
+                        <div class="payment_info">
+                            <input class="casuta_noastra" type="text" placeholder="name of the receipt"></input>
+                        </div>
+                        <div><label>Description</label></div>
+                        <div class="payment_info">
+                            <input class="casuta_noastra" type="text" placeholder="'Thank you'"></input>
+                        </div>
+                        <div><label>Date</label></div>
+                        <div class="payment_info">
+                            <input class="casuta_noastra" type="text" placeholder="02/06/2022"></input>
+                        </div>
+                          <div class="butoane_de_plata">
+                            <div class="butoane_sender">
+                                <div class="but"><a  href="#">Save draft</a></div>
                               </div>
-                          </div></div>
-                        <div class="balance"><h3>Balance:</h3><h1>74,22 Eur</h1></div>
-                        <div class="payment_button">
-                        <button><img src="images/history.png"><a href="#">Transaction History</a></button>
-                        <button><img src="images/credit-card.png"><a href="#">New payment</button>
-                    
-                        </div>
-
-                     </div>
-                     <div class="RON_account">
-                        <div class="description"><h1>Account HUF</h1><div class="dropdown_menu_accounts">
-                            <img onclick="Account_dropdown_menu()" src="images/icons8-menu-vertical-30.png" class="account_dropdown_button">
-                            <div id="yourDropdown" class="dropdown-content-account">
-                              <div class="menu_links"><a href="#">Cards</a><img src="images/credit-card.png"></div>
-                              <div class="menu_links"><a href="#">Taxes</a><img src="images/device.png"></div>
-                              <div class="menu_links"><a href="#">IBAN</a><img src="images/notification.png"></div>
+                              <div class="butoane_sender">
+                                <div><a  href="#">Send</a></div>
                               </div>
-                          </div></div>
-                        <div class="balance"><h3>Balance:</h3><h1>4532,5 Huf</h1></div>
-                        <div class="payment_button">
-                        <button><img src="images/history.png"><p>Transaction history</p></button>
-                        <button><img src="images/credit-card.png"><p>New payment</p></button>
-                    
-                        </div>
-
-                     </div>
-               
+                          </div>
+                    </div>
                 </div>
-                 
-
-                 <div class="advertisement">
-                    <p>Welcome to Green Bank online, a platform where transactions have never been so easy to understand :)</p>
-                      <hr>
-                    <p>Never divulge your security elements. Green Bank will never send you e-mails or sms asking you to access web addresses or links to connect to Green Bank Online. The original site is secure, if you have any suspicions, leave the site immediately.</p>
-                 </div>
-                </div>
+            </div>
         </div>
+        
     </section>
 
     <section>
