@@ -16,7 +16,7 @@
     <nav>
         <div class="navigation">
             <div class="brand">
-                 <img class="brand_image" src="images/clover.png">
+                 <img onclick="openHomePage()" class="brand_image" src="images/clover.png">
                  <h2>Green</h2>
                  <h2>Bank</h2>
             </div>
@@ -24,7 +24,7 @@
             <div class="dropdown">
                 <img src="images/menu_horizontal.png" class="dropbtn" onclick="myFunction()">
                 <div id="myDropdown" class="dropdown-content">
-                  <div class="menu_links"><a href="#">Profile</a><img src="images/user.png"></div>
+                  <div class="menu_links"><a onclick="set_Base_amounts()" href="#">Set money</a></div>
                   <div class="menu_links"><a href="#">Devices</a><img src="images/device.png"></div>
                   <div class="menu_links"><a href="#">Tutorial</a><img src="images/history.png"></div>
                   <div class="menu_links"><a href="#">Log Out</a><img src="images/log-out.png"></div>
@@ -49,7 +49,7 @@
                               <div class="menu_links"><a href="#">IBAN</a><img src="images/notification.png"></div>
                               </div>
                           </div> </div>
-                        <div class="balance"><h3>Balance:</h3><h1>611,42 Lei</h1></div>
+                        <div class="balance"><h1 id="RON_amount"></h1></div>
                         <div class="payment_button">
                         <button><img src="images/history.png"><a href="ron-account.html">Transaction History</a></button>
                         <button><img src="images/credit-card.png"><a href="ron-account.html">New Payment</a></button>
@@ -66,10 +66,10 @@
                               <div class="menu_links"><a href="#">IBAN</a><img src="images/notification.png"></div>
                               </div>
                           </div></div>
-                        <div class="balance"><h3>Balance:</h3><h1>74,22 Eur</h1></div>
+                        <div class="balance"><h1 id="EUR_amount"></h1></div>
                         <div class="payment_button">
                         <button><img src="images/history.png"><a href="#">Transaction History</a></button>
-                        <button><img src="images/credit-card.png"><a href="#">New payment</button>
+                        <button><img src="images/credit-card.png"><a onclick="set_Base_amounts()">New payment</button>
                     
                         </div>
 
@@ -83,7 +83,7 @@
                               <div class="menu_links"><a href="#">IBAN</a><img src="images/notification.png"></div>
                               </div>
                           </div></div>
-                        <div class="balance"><h3>Balance:</h3><h1>4532,5 Huf</h1></div>
+                        <div class="balance"><h1 id="HUF_amount"></h1></div>
                         <div class="payment_button">
                         <button><img src="images/history.png"><p>Transaction history</p></button>
                         <button><img src="images/credit-card.png"><p>New payment</p></button>

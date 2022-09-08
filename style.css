@@ -8,7 +8,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 
 .navigation {
-    height: 9vh;
+    height: 8vh;
     width: 100vw;
     background-image: linear-gradient(to bottom, #fffc53, #91ff00);
     position: relative;
@@ -20,19 +20,23 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 h1,h2,h3,h4,p,a {
     font-family: 'Ubuntu';
-    color: rgb(53, 52, 52);
+    color: rgb(92, 87, 87);
     margin: 0;
     text-decoration: none;
+}
+h2{
+    font-size: 24px
 }
 
 .brand {
 display: flex;
 align-items: center;
+cursor: pointer;
     
 }
 
 .brand_image {
-    height: 50px;
+    height: 45px;
     padding: 0 10px;
 }
 
@@ -209,11 +213,11 @@ align-items: center;
     
 }
 .RON_account {
-    height: 25vh;
+    height: 24vh;
     width: 30vw;
     background-color: rgb(245, 245, 245);
     display: flex;
-   justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: column;
     box-shadow: 2px 2px 8px 5px rgb(206, 199, 199);
     transition: 0.3s;
@@ -233,10 +237,8 @@ align-items: center;
 .balance {
     text-align: right;
     margin: 60px 10px 0px 10px;
-    
     display: flex;
-    justify-content:space-between;
-    align-items: center;
+    justify-content: right;
 }
 
 .payment_button {
@@ -260,7 +262,7 @@ button {
 }
 
 button:first-child {
-    background-color: white;
+    background-color: rgb(236, 233, 233);
 }
 button:first-child:hover {
     background-color: rgb(252, 255, 66);
@@ -381,15 +383,10 @@ a:hover{
     .brand {
     display: flex;
     align-items: center;
-       
+
         width: 99vw;
     }
-    
-    .brand_image {
-        height: 50px;
-        padding: 0 10px;
-    }
-    
+   
     .translate_buttons{
         height: 4vh ;
         width: 10vw;
@@ -401,9 +398,7 @@ a:hover{
         align-items: center;
         display: none;
     }
-    h2{
-        
-    }
+   
     
     .en_flag {
         display: flex;

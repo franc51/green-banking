@@ -8,7 +8,7 @@
     <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
     <link rel="icon" href="GRB.PNG">
 
-    <title>Green Bank Menu</title>
+    <title>Account RON</title>
 </head>
 <body>
 
@@ -16,7 +16,7 @@
     <nav>
         <div class="navigation">
             <div class="brand">
-                 <img class="brand_image" src="images/clover.png">
+                 <img onclick="openHomePage()" class="brand_image" src="images/clover.png">
                  <h2>Green Bank</h2>
                  <div id="google_translate_element"></div> 
             </div>
@@ -41,18 +41,19 @@
                 <div class="accounts">
                     <div class="RON_account">
                         <div class="description"><h1>Account RON</h1><div class="dropdown_menu_accounts">
-                            <img onclick="Account_dropdown_menu()" src="images/icons8-menu-vertical-30.png" class="account_dropdown_button">
+                            <img onclick="" src="images/icons8-menu-vertical-30.png" class="account_dropdown_button">
                             <div id="yourDropdown" class="dropdown-content-account">
                               <div class="menu_links"><a href="#">Cards</a><img src="images/credit-card.png"></div>
                               <div class="menu_links"><a href="#">Taxes</a><img src="images/device.png"></div>
                               <div class="menu_links"><a href="#">IBAN</a><img src="images/notification.png"></div>
                               </div>
                           </div> </div>
-                        <div class="balance"><h3>Balance:</h3><h1>611,42 Lei</h1></div>
+                        <div class="balance"><h3>Balance:</h3><h1 id="RON_amount"></h1></div>
                         <div class="payment_button">
                         
                         </div>
                     </div>
+                   <form id="myForm">
                     <div class="payment_transfer">
                         <div><label>From account:</label></div>
                         <div class="payment_info">
@@ -60,29 +61,30 @@
                         </div>
                         <div><label>To account:</label></div>
                         <div class="payment_info">
-                            <input class="casuta_noastra" type="text" placeholder="IBAN"></input>
+                            <input id="receiver_account" class="casuta_noastra" type="text" placeholder="IBAN"></input>
                         </div>
                         <div><label>Name</label></div>
                         <div class="payment_info">
-                            <input class="casuta_noastra" type="text" placeholder="name of the receipt"></input>
+                            <input id="name" class="casuta_noastra" type="text" placeholder="name of the receipt"></input>
                         </div>
                         <div><label>Description</label></div>
                         <div class="payment_info">
-                            <input class="casuta_noastra" type="text" placeholder="'Thank you'"></input>
+                            <input id="description" class="casuta_noastra" type="text" placeholder="'Thank you'"></input>
                         </div>
-                        <div><label>Date</label></div>
+                        <div><label>Amount</label></div>
                         <div class="payment_info">
-                            <input class="casuta_noastra" type="text" placeholder="02/06/2022"></input>
+                            <input id="amount" class="casuta_noastra" type="text" placeholder="20"></input>
                         </div>
                           <div class="butoane_de_plata">
                             <div class="butoane_sender">
                                 <div class="but"><a  href="#">Save draft</a></div>
                               </div>
-                              <div class="butoane_sender">
-                                <div><a  href="#">Send</a></div>
+                              <div  class="butoane_sender">
+                                <div><a onclick="get_transfer_data()"type="submit" id="result "href="#">Send</a></div>
                               </div>
                           </div>
                     </div>
+                   </form>
                 </div>
             </div>
         </div>
@@ -129,10 +131,6 @@
     </footer>
 </section>
 
-    <script type="text/javascript" src=
-"https://translate.google.com/translate_a/element.js?
-        cb=googleTranslateElementInit">
-    </script> 
     <script src="script.js"></script>
 </body>
 </html>
